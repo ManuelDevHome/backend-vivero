@@ -7,6 +7,7 @@ import { Producto } from './inventario/producto.entity';
 import { VentaModule } from './venta/venta.module';
 import { Venta } from './venta/venta.entity';
 import { DetalleVenta } from './venta/detalle-venta.entity';
+import { ReportesModule } from './reportes/reportes.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { DetalleVenta } from './venta/detalle-venta.entity';
     }),
     InventarioModule,
     VentaModule,
+    ReportesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
